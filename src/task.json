@@ -1,0 +1,83 @@
+[
+	{
+		"number": 1,
+		"lang": "JS",
+		"description": "Задача: написать код который будет возвращать текст hello world",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 2,
+		"lang": "Go",
+		"description": "Задача: написать код который будет возвращать текст hello world",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 3,
+		"lang": "Python",
+		"description": "Задача: написать код который будет возвращать текст hello world",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 4,
+		"lang": "JS",
+		"description": "Задача: написать код который будет проверять массив и выводить его длину",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 5,
+		"lang": "Go",
+		"description": "Задача: написать код который будет проверять массив и выводить его длину",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 6,
+		"lang": "Python",
+		"description": "Задача: написать код который будет проверять массив и выводить его длину",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 7,
+		"lang": "JS",
+		"description": "Задача: дана строка, выведите в консоль последний символ строки",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 8,
+		"lang": "Go",
+		"description": "Задача: дана строка, выведите в консоль последний символ строки",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	},
+	{
+		"number": 9,
+		"lang": "Python",
+		"description": "Задача: дана строка, выведите в консоль последний символ строки",
+		"text": "",
+		"images": null,
+		"completed": false,
+		"level": "Easy"
+	}
+]
