@@ -1,0 +1,32 @@
+@import '/src/assets/global.scss';
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 80px;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font-family: $primary-font;
+}
+
+.link {
+	color: $primary-color;
+	text-decoration: none;
+	font-size: 18px;
+	transition: 0.1s;
+	&:hover {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+.active {
+	color: $green;
+}
