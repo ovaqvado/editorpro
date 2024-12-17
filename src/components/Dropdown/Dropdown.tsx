@@ -1,14 +1,20 @@
-import styles from './Dropdown.module.scss'
+import { FC } from 'react'
+const languages = ['JS', 'Python', 'Go']
 
-export default function Dropdown() {
+const Dropdown: FC<{
+	selectedLang: string
+	onSelect: (lang: string) => void
+}> = ({ selectedLang, onSelect }) => {
 	return (
-		<div className={styles.dropdown}>
-			<span className={styles.sel_lang}>Select language:</span>
-			<div className={styles.dropdown_content}>
-				<button>Js</button>
-				<button>Go</button>
-				<button>Python</button>
-			</div>
-		</div>
+		<select value={selectedLang} onChange={e => onSelect(e.target.value)}>
+			<option value=''>Все языки</option>
+			{languages.map(lang => (
+				<option key={lang} value={lang}>
+					{lang}
+				</option>
+			))}
+		</select>
 	)
 }
+
+export default Dropdown

@@ -1,13 +1,26 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { Link } from 'react-router'
 import tasks from '../../task.json'
+import Dropdown from '../Dropdown/Dropdown'
 import styles from './TaskSheets.module.scss'
 
 export const TaskSheet: FC = () => {
+	const [selectedLang, setSelectedLang] = useState<string>('')
+
+	const handleLanguageSelect = (lang: string) => {
+		setSelectedLang(lang)
+	}
+
+	const filteredTasks = selectedLang
+		? tasks.filter(
+				task => task.lang.toLowerCase() === selectedLang.toLowerCase()
+		  )
+		: tasks
 	return (
-		<div>
+		<>
+			<Dropdown selectedLang={selectedLang} onSelect={handleLanguageSelect} />
 			<ol className={styles.list}>
-				{tasks.map(task => (
+				{filteredTasks.map(task => (
 					<li key={task.number} className={styles.task}>
 						<p className={styles.num_task}>{task.number}.</p>
 						<div className={styles.info_btn}>
@@ -21,11 +34,11 @@ export const TaskSheet: FC = () => {
 							</div>
 						</div>
 						<Link to={`/task/${task.number}`} className={styles.btn_run}>
-							Run
+							Запустить
 						</Link>
 					</li>
 				))}
 			</ol>
-		</div>
+		</>
 	)
 }

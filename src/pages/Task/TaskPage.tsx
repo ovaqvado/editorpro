@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { useParams } from 'react-router-dom'
-import { InputWindow } from '../../components/InputWindow/InputWindow'
+import InputWindow from '../../components/InputWindow/InputWindow'
 import tasks from '../../task.json'
 import styles from './TaskPage.module.scss'
 
